@@ -6,6 +6,29 @@ body {
 .navbar {
   background: #111;
 }
+.logo{
+  font-size: 2rem;
+  font-weight: 700;
+}
+.nav-link{
+  color: #fff;
+  margin-left: 1rem;
+  position: relative;
+  display: inline-block;
+}
+.nav-link::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 3px;
+  background-color: #fbfbfd;
+  transition: all 0.3s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
 
 .hero {
   height: 100vh;
@@ -17,23 +40,53 @@ body {
   color: #0d6efd;
 }
 
+#about{
+  background: linear-gradient(to bottom, #1c2d41, #94A378);
+}
 .section {
-  padding: 80px 0;
+  padding: 80px 0; 
+  background: #94A378;
+  border-top: 1px solid white;
+}
+.about-text{
+  padding: 3rem;
+  border: 1px solid white;
+  border-radius: 5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.5) ;
 }
 
-.skill-box {
+.btn {
   padding: 15px;
-  background: #fff;
+ background: linear-gradient(to right, #141e30, #243b55);
+  color: #fff;
+  margin-right: 0.3rem;
   border-radius: 8px;
   font-weight: 600;
-  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+   background: rgba(0, 0, 0, 0.831);
+  border-radius: 50px;
+  font-size: 18px;
+  box-shadow:
+    2px 2px 5px #bebebe,
+    -6px -6px 12px #ffffff;
+  border: none;
+}
+.btn:active {
+  box-shadow:
+    inset 2px 2px 5px #bebebe,
+    inset -6px -6px 12px #ffffff;
+}
+.btn-sm{
+  padding: 5px;
+  font-size: 14px;
 }
 
 .project-card {
   padding: 20px;
   border-radius: 10px;
   background: #fff;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5) ;
 }
 
 footer {
