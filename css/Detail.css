@@ -1,0 +1,146 @@
+/* --------------------- */
+/* Global Styles */
+/* --------------------- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f0f4ff, #e0f7fa, #fff9f0);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* --------------------- */
+/* Glass Card Styles */
+/* --------------------- */
+.glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.glass:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.85);
+}
+
+/* --------------------- */
+/* Hero Section */
+/* --------------------- */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    /* Soft gradient for heading */
+    background: linear-gradient(90deg, #42a5f5, #80deea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* --------------------- */
+/* Section Titles */
+/* --------------------- */
+.section-title {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #070707e5;
+    margin-bottom: 20px;
+}
+
+/* --------------------- */
+/* Feature Items */
+/* --------------------- */
+.feature-item {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.feature-item::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #66bb6a;
+    font-weight: bold;
+}
+
+/* --------------------- */
+/* Tech Cards */
+/* --------------------- */
+.tech-card {
+    height: 100%;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.tech-card h5 {
+    font-weight: 600;
+    color: #070707e5;
+    margin-bottom: 10px;
+}
+.text-info{
+    color: #070707e5;
+}
+
+.tech-card p {
+    color: #070707e5;
+    font-size: 0.95rem;
+}
+
+.tech-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* --------------------- */
+/* Footer */
+/* --------------------- */
+footer {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    padding: 25px;
+}
+
+/* --------------------- */
+/* Responsive Adjustments */
+/* --------------------- */
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+}

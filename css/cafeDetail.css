@@ -1,0 +1,74 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(to right, #141e30, #243b55);
+  padding: 80px 0;
+}
+/* Section spacing */
+.section-padding {
+  padding: 80px 0;
+    background: #94A378;
+}
+.badge{
+      padding: 15px;
+ background: linear-gradient(to right, #141e30, #243b55);
+  color: #fff;
+  margin-right: 0.3rem;
+  border-radius: 8px;
+  font-weight: 600;
+   background: rgba(0, 0, 0, 0.831);
+  border-radius: 50px;
+  font-size: 18px;
+  box-shadow:
+    2px 2px 5px #bebebe,
+    -6px -6px 12px #ffffffb7;
+  border: none;
+}
+.mian{
+      background: #94A378;
+}
+/* Cards */
+.custom-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Feature list */
+.feature-list {
+  padding-left: 18px;
+}
+
+.feature-list li {
+  margin-bottom: 10px;
+}
+
+/* Tech cards */
+.tech-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  height: 100%;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.tech-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+}
+
+/* CTA */
+.cta-section {
+  background: linear-gradient(135deg, #343a40, #212529);
+  padding: 70px 0;
+}
